@@ -51,20 +51,20 @@ function Footer() {
                     </div>
                     <small className="website-rights">AM &#169; 2021</small>
                     <div className="social-icons">
-                        <Link className="social-icon-link github"
-                        to='/'
+                        <a className="social-icon-link github"
+                        href='https://github.com/ahmed-ha-malik/'
                         target='_blank'
                         aria-label='Github'
                         >
                             <i className="fab fa-github"></i>
-                        </Link>
-                        <Link className="social-icon-link linkedin"
-                        to='/'
+                        </a>
+                        <a className="social-icon-link linkedin"
+                        href='https://www.linkedin.com/in/ahmedmalikit'
                         target='_blank'
                         aria-label='LinkedIn'
                         >
                             <i className="fab fa-linkedin-in"></i>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>
