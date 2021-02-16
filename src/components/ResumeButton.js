@@ -1,23 +1,22 @@
 import React from 'react';
-import './Button.css';
-import {Link} from 'react-router-dom';
+import './ResumeButton.css';
 
 const STYLES = ['btn--primary', 'btn--outline'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
 
-export const Button = ({children, type, onClick, buttonStyle, buttonSize, to, download, target}) => {
+export const ResumeButton = ({children, type, onClick, buttonStyle, buttonSize, to, download}) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
     return (
-        <Link to={to} download={download} target={target} className='btn-mobile'>
+        <a href={to} download={download} className='btn-mobile'>
             <button className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick} type={type}>
                 {children}
             </button>
-        </Link>
+        </a>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
+import { ResumeButton } from './ResumeButton';
 import './AboutHero.css';
 import video2 from '../images/code.mp4';
 import video from '../images/tea.mp4';
@@ -12,10 +12,10 @@ function AboutHero() {
             <h1>Hey there! I'm Ahmed, an IT grad with a concentration in Web Development</h1>
             
             <div className="aboutHero-btns">
-                <Button className='btns' buttonStyle='btn--primary'
-                buttonSize='btn--large' to='/works'>
+                <ResumeButton className='btns' buttonStyle='btn--primary'
+                buttonSize='btn--large' to='../images/Resume21.pdf' download>
                     Resume<i className='fas fa-download' />
-                </Button>
+                </ResumeButton>
             </div>
             <p>
                 I pride myself in my love for learning, and my prowess as a student of my craft!
